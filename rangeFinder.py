@@ -1,4 +1,4 @@
-
+import functionalities as func
 
 def choice():
     print("In Range Finder\n")
@@ -7,7 +7,7 @@ def choice():
         choice = input("1. Prime Numbers\n2. Even Numbers\n3. Odd Numbers\n0. Return to Main Menu\nEnter Your Choice: ")
         
         if choice == "1":
-            pass # Prime Numbers Code goes here
+            func.prime_range()
         elif choice == "2":
             pass # Even Numbers Code goes here
         elif choice == "3":
