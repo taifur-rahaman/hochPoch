@@ -43,13 +43,16 @@ def reverse_digits():
         user_input //= 10
     print(f"The reverse of the digits in {temp_input} is {reversed_number}.")
 
-def prime_range():
+def asking_for_range():
     lower_limit = int(input("Enter the lower limit of the range: "))
     upper_limit = int(input("Enter the upper limit of the range: "))
+    return lower_limit, upper_limit
+
+def prime_range():
+    lower, upper = asking_for_range()
+    print(f"Prime numbers between {lower} and {upper} are: ")
     
-    print(f"Prime numbers between {lower_limit} and {upper_limit} are: ")
-    
-    for number in range(lower_limit, upper_limit + 1):
+    for number in range(lower, upper + 1):
         isPrime = True
         if number > 1:
             for i in range(2, int(number)):
@@ -58,3 +61,15 @@ def prime_range():
                     break
             if isPrime:
                 print(number, end="\n")
+
+def even_range():
+    lower, upper = asking_for_range()
+    for number in range(lower, upper + 1):
+        if number % 2 == 0:
+            print(number, end="\n")
+
+def odd_range():
+    lower, upper = asking_for_range()
+    for number in range(lower, upper + 1):
+        if number % 2 != 0:
+            print(number, end="\n")

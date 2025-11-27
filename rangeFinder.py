@@ -9,9 +9,9 @@ def choice():
         if choice == "1":
             func.prime_range()
         elif choice == "2":
-            pass # Even Numbers Code goes here
+            func.even_range()
         elif choice == "3":
-            pass # Odd Numbers Code goes here
+            func.odd_range()
         elif choice == "0":
             print("Returning to Main Menu.\n")
             break
