@@ -70,7 +70,17 @@ def factorial_of_number():
         fact = fact * i
     
     print(f"The factorial is: {fact}")
+
+def fabonacci_series():
+    limit = int(input("Enter the number of terms for Fabonacci Series: "))
+    series = [0, 1]
+    for i in range(2, limit):
+        next_term = series[i - 1] + series[i - 2]
+        series.append(next_term)
     
+    print(f"Fabonacci Series up to {limit} are: ")
+    for i in range(limit):
+        print(series[i], end=" ")
 
 def asking_for_range():
     lower_limit = int(input("Enter the lower limit of the range: "))
