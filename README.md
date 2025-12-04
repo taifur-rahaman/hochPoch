@@ -3,3 +3,4 @@
 - Multi Purpose Calculator
 - Unit Conversion
 - Geometric Areas
+- Data Validator
